@@ -1,7 +1,9 @@
-##Install ESP8266 Arduino core in the Arduino IDE
+## Install ESP8266 Arduino core in the Arduino IDE
 
-Head to Arduino ESP8266 Core project page on Github: https://github.com/esp8266/Arduino
-
+Head to Arduino ESP8266 Core project page on Github:
+```
+https://github.com/esp8266/Arduino
+```
 From there copy the Board Manager Link:
 ```
 http://arduino.esp8266.com/stable/package_esp8266com_index.json
@@ -20,7 +22,7 @@ After installing choose a “Wemos D1 R2 & mini” Board from the Tools -> Board
 At the bottom right corner of the IDE you should see a line that looks something like this:  
 ![Board chosen](images/boardChosen.png)
 
-##Connect the Wemos D1 R2 mini board and Blink an LED!
+## Connect the Wemos D1 R2 mini board and Blink an LED!
 Connect the board to your computer (in case you’ve unplugged it after installing the driver).
 Choose a correct COM port from the Tools -> Port (eg. correct /dev/ttyUSB[N], or COM[N]).
 
@@ -53,7 +55,7 @@ In case you see an error message (example below) please try:
 * starting the upload and then pressing the reset button after a few blinks of the on board
 
 
-##Writing output to serial
+## Writing output to serial
 Now we’ll test the Serial console communication between the board and the computer.
 Modify a bit the previous sketch:
 ```
