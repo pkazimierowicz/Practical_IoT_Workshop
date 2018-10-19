@@ -1,7 +1,7 @@
 ## Connecting the DHT11 sensor to wemos d1
 
 Start by connecting the DHT11 sensor to your board
-//TODO Fritzing schematic!
+![ip addr](images/wemosDHT.png)
 
 ## Installing DHT11 library
 

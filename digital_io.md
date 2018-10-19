@@ -1,5 +1,5 @@
 ## Digital Input - sending button status.
-Let's connect a button to our board:
+Let's connect a button to our board - it should short the D2 with GND.
 
 And then add suitable code to use it. First let's configure the input:
 

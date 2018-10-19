@@ -4,7 +4,8 @@
 3. [Digital IO](digital_io.md)
 3. [OneWire temperature and humidity sensor](dht11.md)
 5. [Building logic in Node-RED](nodered.md)
+4. [Issues debugging - I2C pressure sensor](bmp280.md)
+
 
 ### Unfinished yet
-4. [I2C pressure sensor](bmp280.md)
 6. [Smartphone MQTT connection](smartphone.md)
