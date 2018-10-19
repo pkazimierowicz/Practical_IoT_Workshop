@@ -1,4 +1,3 @@
-# Practical IoT Workshop
 1. [Getting started](getting_started.md)
 2. [Connecting to WiFi and MQTT](connecting_to_wifi.md)
 3. [Digital IO](digital_io.md)
@@ -6,10 +5,6 @@
 4. [Issues debugging - I2C pressure sensor](bmp280.md)
 
 
-### Unfinished yet
-6. [Smartphone MQTT connection](smartphone.md)
-
-# Contact info
-Paweł Kazimierowicz
+## Contact info
 * [contact@kazimierowicz.eu](contact@kazimierowicz.eu)
 * +48 510 713 758
