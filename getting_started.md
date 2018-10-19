@@ -42,5 +42,41 @@ void loop() {
 ```
 Just make sure that there is LED_BUILTIN used as an output rather than number 13 and press the Upload button in the IDE (arrow going right)
 ![Upload](images/upload.png)
+
 You should see an upload log similar to this:
 ![Upload log](images/uploadLog.png)
+
+In case you see an error message (example below) please try:
+* just repeating the upload again
+* checking if the COM /ttyUSB port is set correctly
+* resetting the board (using a button on it) and repeating
+* starting the upload and then pressing the reset button after a few blinks of the on board
+
+
+##Writing output to serial
+Now we’ll test the Serial console communication between the board and the computer.
+Modify a bit the previous sketch:
+```
+void setup() {
+  // initialize digital pin LED_BUILTIN as an output.
+  pinMode(LED_BUILTIN, OUTPUT);
+  Serial.begin(115200);
+}
+
+uint8_t i = 0;
+void loop() {
+  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
+  delay(1000);                       // wait for a second
+  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
+  delay(1000);                       // wait for a second
+  Serial.println(i++);
+}
+```
+
+In the setup you’ll initialize the Serial output at a baudrate of 115200 and in loop just print an incremented iterator.
+Upload the sketch, and open the serial monitor in the ArduinoIDE.
+![Serial monitor](images/serialMonitor.png)
+
+Remember to set the same baudrate in the serial monitor, as we’ve used in the code:
+![Serial monitor](images/serialLog.png)
+In case you see just garbage and no real data - just reboot the board with reset button.
