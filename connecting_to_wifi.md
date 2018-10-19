@@ -180,4 +180,5 @@ You can as well check if it’s working properly using the web tool.
 
 
 
-### Move to the next excersise
+### Next exercise
+[Digital IO and MQTT](digital_io.md)

@@ -151,7 +151,7 @@ If youset the timer to something like 30 minutes you could *kinda* have a wirele
 
 ## Next excersise:
 
-[I2C pressure sensor](bmp280.md)
+[Node-RED flows](nodered.md)
 
 Code sample:
 
