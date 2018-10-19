@@ -184,6 +184,7 @@ void measureTempAndHumidity(){
   ESP.deepSleep(10000000);
 }
 void setup() {
+  pinMode(13, INPUT_PULLUP);
   pinMode(LED_BUILTIN, OUTPUT);
   Serial.begin(115200);
   setup_wifi();
@@ -200,6 +201,10 @@ void loop() {
   if(lastMeasurement + 2000 < millis()){
     measureTempAndHumidity();
     lastMeasurement = millis();
+  }
+  if(digitalRead(13) == LOW){
+    client.publish("yourName/Input","1");
+    delay(300);
   }
 }
 void callback(char* topic, byte* payload, unsigned int length) {
