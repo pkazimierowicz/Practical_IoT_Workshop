@@ -276,7 +276,6 @@ void loop() {
   }
   client.loop();
   client.publish(SENSOR_NAME,String(i++).c_str());
-  delay(1000);
 }
 void callback(char* topic, byte* payload, unsigned int length) {
   Serial.print("Message arrived [");
@@ -289,9 +288,9 @@ void callback(char* topic, byte* payload, unsigned int length) {
 
   if(strcmp(topic, "yourNameControl") == 0){
     if ((char)payload[0] == '1') {
-      digitalWrite(LED_BUILTIN, HIGH);
-    } else {
       digitalWrite(LED_BUILTIN, LOW);
+    } else {
+      digitalWrite(LED_BUILTIN, HIGH);
     }
   }
 }
@@ -336,5 +335,4 @@ void setup_wifi() {
   Serial.println("IP address: ");
   Serial.println(WiFi.localIP());
 }
-
 ```
