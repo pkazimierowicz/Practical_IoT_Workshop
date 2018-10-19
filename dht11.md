@@ -103,8 +103,8 @@ void measureTempAndHumidity(){
     return;
   }
 
-  client.publish("yourNameTemperature", String(temperature).c_str());
-  client.publish("yourNameHumidity", String(humidity).c_str());
+  client.publish("yourName/Temperature", String(temperature).c_str());
+  client.publish("yourName/Humidity", String(humidity).c_str());
 }
 ```
 
@@ -136,8 +136,8 @@ void measureTempAndHumidity(){
     return;
   }
 
-  client.publish("yourNameTemperature", String(temperature).c_str());
-  client.publish("yourNameHumidity", String(humidity).c_str());
+  client.publish("yourName/Temperature", String(temperature).c_str());
+  client.publish("yourName/Humidity", String(humidity).c_str());
   ESP.deepSleep(10000000);
 }
 ```
@@ -178,8 +178,8 @@ void measureTempAndHumidity(){
     return;
   }
 
-  client.publish("yourNameTemperature", String(temperature).c_str());
-  client.publish("yourNameHumidity", String(humidity).c_str());
+  client.publish("yourName/Temperature", String(temperature).c_str());
+  client.publish("yourName/Humidity", String(humidity).c_str());
   ESP.deepSleep(10000000);
 }
 void setup() {
