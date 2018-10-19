@@ -1,5 +1,3 @@
-[Index](index.md)
-
 ##Install ESP8266 Arduino core in the Arduino IDE
 
 Head to Arduino ESP8266 Core project page on Github: https://github.com/esp8266/Arduino
