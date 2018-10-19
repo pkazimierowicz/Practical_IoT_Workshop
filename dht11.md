@@ -11,6 +11,7 @@ Now we'll search for a suitable library to work with that sensor:
 Let's install SimpleDHT.
 
 Now let's open `Examples->SimpleDHT->DHT11Default` example code:
+And *change the pin number to 0*, the default 2 is where `LED_BUILTIN` is plugged in so it would mess with our output control ability.
 ```
 #include <SimpleDHT.h>
 
@@ -18,7 +19,7 @@ Now let's open `Examples->SimpleDHT->DHT11Default` example code:
 //      VCC: 5V or 3V
 //      GND: GND
 //      DATA: 2
-int pinDHT11 = 2;
+int pinDHT11 = 0;
 SimpleDHT11 dht11(pinDHT11);
 
 void setup() {
@@ -53,7 +54,7 @@ Upload the code and test whether the sensor is working.
 Now let's clean up the code so we clearly see only the parts that we'll actually use:
 ```
 #include <SimpleDHT.h>
-int pinDHT11 = 2;
+int pinDHT11 = 0;
 SimpleDHT11 dht11(pinDHT11);
 
 void setup() {
@@ -82,7 +83,7 @@ First - let's add the include and dht object at the top of our code:
 #include <PubSubClient.h>
 
 #include <SimpleDHT.h>
-int pinDHT11 = 2;
+int pinDHT11 = 0;
 SimpleDHT11 dht11(pinDHT11);
 
 #define WIFI_SSID "WorkshopNet"
@@ -159,7 +160,7 @@ Code sample:
 #include <PubSubClient.h>
 
 #include <SimpleDHT.h>
-int pinDHT11 = 2;
+int pinDHT11 = 0;
 SimpleDHT11 dht11(pinDHT11);
 
 #define WIFI_SSID "WorkshopNet"
