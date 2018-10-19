@@ -82,3 +82,8 @@ Upload the sketch, and open the serial monitor in the ArduinoIDE.
 Remember to set the same baudrate in the serial monitor, as we’ve used in the code:
 ![Serial monitor](images/serialLog.png)
 In case you see just garbage and no real data - just reboot the board with reset button.
+
+
+## Next excersise - connecting to WiFi
+
+[Connecting to WiFi and MQTT](connecting_to_wifi.md)
