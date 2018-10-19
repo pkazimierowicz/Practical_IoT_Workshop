@@ -1,4 +1,6 @@
-## Connecting to connecting_to_wifi
+[Go back to the beginning](index.md)
+
+## Connecting to WiFi network
 Now we’ll connect to the WiFi Network - using a simple function setup_wifi() that we’ll write somewhere in our code and call it in setup();
 ```
 #include <ESP8266WiFi.h>

@@ -1,3 +1,4 @@
+[Go back to the beginning](index.md)
 ## Digital Input - sending button status.
 Let's connect a button to our board - it should short the D2 with GND.
 

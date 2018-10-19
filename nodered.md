@@ -1,4 +1,4 @@
-## Basics of Node-RED
+[Go back to the beginning](index.md)
 
 ## Getting data from MQTT and displaying it in the debug pane
 
