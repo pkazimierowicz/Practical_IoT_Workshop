@@ -211,7 +211,7 @@ void callback(char* topic, byte* payload, unsigned int length) {
   }
   Serial.println();
 
-  if(strcmp(topic, "yourNameControl") == 0){
+  if(strcmp(topic, "yourName/Control") == 0){
     if ((char)payload[0] == '1') {
       digitalWrite(LED_BUILTIN, LOW);
     } else {
@@ -231,7 +231,7 @@ void reconnect() {
       Serial.println("connected");
       client.publish(SENSOR_NAME, "hello world");
       client.subscribe("sensorNode");
-      client.subscribe("yourNameControl");
+      client.subscribe("yourName/Control");
 
     } else {
       delay(5000);
