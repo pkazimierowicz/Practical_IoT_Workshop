@@ -165,7 +165,7 @@ Upload the sketch and observe the values on the screen. Like mentioned previousl
 Let’s change it into nonblocking code:
 ```
 uint8_t i = 0;
-unsigned long lastDataSent = 0
+unsigned long lastDataSent = 0;
 void loop() {
   if (!client.connected()) {
     reconnect();
