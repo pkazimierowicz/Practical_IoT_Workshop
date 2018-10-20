@@ -1,0 +1,17 @@
+docker rm workshopnodered 
+docker rm  workshopnodered1 
+docker rm  workshopnodered2 
+docker rm  workshopnodered3 
+docker rm  workshopnodered4 
+docker rm  workshopnodered5 
+docker rm  workshopnodered6 
+docker rm  workshopnodered7 
+docker rm  workshopnodered8 
+docker rm  workshopnodered9 
+docker rm  workshopnodere10 
+docker rm  workshopnodere11 
+docker rm  workshopnodere12 
+docker rm  workshopnodere13 
+docker rm  workshopnodere14 
+docker rm  workshopnodere15 
+docker rm  workshopnodere16 

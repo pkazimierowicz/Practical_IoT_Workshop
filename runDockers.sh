@@ -1,0 +1,17 @@
+docker run -it -d -p 1880:1880 --name workshopnodered nodered/node-red-docker
+docker run -it -d -p 18801:1880 --name workshopnodered1 nodered/node-red-docker
+docker run -it -d -p 18802:1880 --name workshopnodered2 nodered/node-red-docker
+docker run -it -d -p 18803:1880 --name workshopnodered3 nodered/node-red-docker
+docker run -it -d -p 18804:1880 --name workshopnodered4 nodered/node-red-docker
+docker run -it -d -p 18805:1880 --name workshopnodered5 nodered/node-red-docker
+docker run -it -d -p 18806:1880 --name workshopnodered6 nodered/node-red-docker
+docker run -it -d -p 18807:1880 --name workshopnodered7 nodered/node-red-docker
+docker run -it -d -p 18808:1880 --name workshopnodered8 nodered/node-red-docker
+docker run -it -d -p 18809:1880 --name workshopnodered9 nodered/node-red-docker
+docker run -it -d -p 18810:1880 --name workshopnodere10 nodered/node-red-docker
+docker run -it -d -p 18811:1880 --name workshopnodere11 nodered/node-red-docker
+docker run -it -d -p 18812:1880 --name workshopnodere12 nodered/node-red-docker
+docker run -it -d -p 18813:1880 --name workshopnodere13 nodered/node-red-docker
+docker run -it -d -p 18814:1880 --name workshopnodere14 nodered/node-red-docker
+docker run -it -d -p 18815:1880 --name workshopnodere15 nodered/node-red-docker
+docker run -it -d -p 18816:1880 --name workshopnodere16 nodered/node-red-docker
