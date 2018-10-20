@@ -14,7 +14,7 @@ void setup() {
   client.setCallback(callback);
 }
 ```
-Then let's add a piece of code that will send an event when the button is pressed:
+Then let's add a piece of code that will send an event when the button is pressed. Paste following code into the loop() function:
 ```
 if(digitalRead(13) == LOW){
   client.publish("yourName/Input","1");
